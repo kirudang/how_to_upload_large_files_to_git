@@ -1,0 +1,6 @@
+# Dont upload one file, in this case saved_model.pkl, inside models folder
+models/Saved_model.pkl
+# Dont upload one file in the repository without being nested in any folder
+survey_results_public.csv
+# Dont upload an entire folder
+venv/
