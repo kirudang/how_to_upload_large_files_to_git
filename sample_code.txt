@@ -1,0 +1,33 @@
+# Step 1: Download and install Git LFS
+
+# Step 2: Navigate to the folder of your local repository
+cd User/project_A
+
+# Step 3: Initialize the git directory on your local repository
+git init
+
+# Step 4(optional): Update .gitignore file
+
+# Step 5 (optional): Change "master" to "main"
+# Add origin (target repos)
+git remote add origin <your_remote_repository_URL>
+# Create main branch
+git branch -M main
+# Switch to this branch
+git branch
+
+# Step 6: Initialize Git LFS for your
+git lfs install
+
+# Step 7: Track the large files you want to upload using Git LFS
+lfs track "models/Saved_model.pkl" 
+git lfs track "data/survey_results_public.csv"
+
+# Step 8: Add files to repos
+git add .
+
+# Step 9: Commit your changes
+git commit -m "Add large files using Git LFS"
+
+# Step 10: Push your change to the remote repos
+ git push -u origin main
